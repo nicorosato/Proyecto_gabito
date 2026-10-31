@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('mataderos.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    background-color: #61d3e3; 
+    font-size: 55px;    
+    font-family: Arial, sans-serif;
+    text-align: center;        
+    padding: 20px 0;           
+    width: 100vw;             
+    margin: 0;               
+}
+.enlace-titulo{
+    text-decoration: none;
+    color: #000;
+}
+.menu-navegacion {
+    background-color: #f4f4f4; 
+    width: 100vw;
+    margin: 0;
+    padding: 15px 0;           
+    display: flex;             
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.grupo-izquierdo, .grupo-derecho {
+    display: flex;
+    gap: 25px;                
+}
+
+.grupo-izquierdo {
+    padding-left: 70px;      
+}
+
+.grupo-derecho {
+    padding-right: 140px;       
+}
+
+.menu-navegacion a {
+    text-decoration: none;     
+    color: #333333;            
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;         
+    transition: color 0.3s;    
+}
+
+.menu-navegacion a:hover {
+    color: #da1414;  
+}
+
+.contenido-principal {
+    background-color: transparent; 
+    flex-grow: 1; 
+    padding: 60px 70px;
+    
+
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: flex-start;
+    gap: 40px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ 
+
+
+#form {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+#form label {
+    display: block;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+#form input[type="text"],
+#form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  
+}
+
+
+#RegistroUsuario {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.crearCuenta {
+    font-size: 28px;
+    font-weight: 900;
+    color: #222;
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+
+#RegistroUsuario label {
+    display: block;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+#RegistroUsuario input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 4px;
+    margin-bottom: 18px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+#RegistroUsuario input:focus {
+    border-color: #9900ffec; 
+    outline: none;
+
+}
+
+
+#RegistroUsuario br {
+    display: none;
+}
+
+#ccrear {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+  
+    transition: all 0.3s ease;
+}
+
+#ccrear:hover {
+    background-color: #000;
+    transform: translateY(-2px);
+  
+}
+
+#ccrear:active {
+    transform: scale(0.98);
+}
+
+
+.mensaje-error {
+    text-align: center;
+    font-weight: 700;
+    color: #d93838;
+    margin-top: 15px;
+    font-size: 14px;
+}

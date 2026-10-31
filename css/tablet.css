@@ -1,0 +1,174 @@
+
+@media (max-width: 768px) {
+    
+    body {
+        overflow-x: hidden !important;
+    }
+
+    h1 {
+        font-size: 26px !important;
+        padding: 15px 10px !important;
+        width: 100% !important;
+    }
+    .menu-navegacion {
+        flex-direction: column !important;
+        gap: 15px !important;
+        padding: 15px 10px !important;
+        width: 100% !important;
+    }
+
+    .grupo-izquierdo, .grupo-derecho {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        gap: 12px !important;
+        padding: 0 !important; 
+    }
+
+    .menu-navegacion a {
+        font-size: 15px !important;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 6px 0 !important;
+    }
+
+    .contenido-principal {
+        flex-direction: column !important; 
+        padding: 25px 15px !important;
+        gap: 30px !important;
+    }
+
+    .caja-texto {
+        padding: 25px 20px !important;
+        border-radius: 24px !important;
+        width: 100% !important;
+    }
+
+    h2, h4, h10, h10 strong {
+        font-size: 22px !important;
+        text-align: center !important;
+        margin-bottom: 12px !important;
+    }
+
+    h3 {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+        text-align: justify !important;
+    }
+
+   
+    .calendario-contenedor {
+        grid-template-columns: 1fr !important; 
+        width: 100% !important;
+        padding: 20px 15px !important;
+        margin: 20px auto !important;
+        gap: 30px !important;
+    }
+
+    .mes {
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+        padding: 12px !important;
+    }
+
+    ol {
+        gap: 10px 4px !important; 
+    }
+
+    ol li {
+        font-size: 14px !important;
+    }
+
+    .mes ol li a {
+        display: inline-block !important;
+        padding: 4px !important; 
+        font-weight: bold !important;
+    }
+
+    
+    .item-cancion {
+        display: flex !important;
+        align-items: center !important;
+        gap: 12px !important;
+        margin-bottom: 15px !important;
+        width: 100% !important;
+    }
+
+    .boton-cancion, #btn-cancion {
+        min-width: 44px !important; 
+        min-height: 44px !important;
+        font-size: 18px !important;
+        margin-bottom: 0 !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .item-cancion span {
+        font-size: 15px !important;
+        line-height: 1.3 !important;
+        text-align: left !important;
+    }
+
+  
+    #form, #RegistroUsuario {
+        width: 100% !important;
+        max-width: 360px !important;
+        margin: 20px auto !important;
+        padding: 25px 15px !important;
+    }
+
+    #form input[type="text"],
+    #form input[type="password"],
+    #RegistroUsuario input {
+        font-size: 16px !important; 
+        padding: 14px 12px !important;
+    }
+
+    .volver-sesion {
+        display: flex !important;
+        justify-content: center !important;
+        margin: 20px 0 !important;
+    }
+
+    .gif-lateral, .imagen-lateral, .iceberg, .cocu {
+        position: static !important; 
+        width: 85% !important;
+        max-width: 320px !important;
+        height: auto !important;
+        display: block !important;
+        margin: 10px auto 0 auto !important;
+        border-radius: 12px !important;
+    }
+
+    .linea-del-tiempo {
+        flex-direction: column !important; 
+        align-items: flex-start !important;
+        overflow-x: hidden !important;
+        overflow-y: visible !important;
+        padding: 40px 20px 40px 40px !important; 
+        gap: 3rem !important;
+    }
+
+    .linea-del-tiempo::after {
+        width: 1px !important;
+        height: 100% !important;
+        top: 0 !important;
+        left: 20px !important; 
+        transform: none !important;
+    }
+
+    .grupo {
+        width: 100% !important;
+        padding-top: 0 !important;
+        padding-left: 20px !important;
+        transform: none !important;
+        align-self: flex-start !important;
+    }
+
+    .grupo::after {
+        left: -4px !important; 
+        top: 6px !important;
+    }
+}

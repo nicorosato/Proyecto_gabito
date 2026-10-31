@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    .calendario-contenedor a{
+        color: black;
+    }
+.enlace-titulo {
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+    display: inline-block; 
+    cursor: pointer; 
+}
+body {
+    background-image: url('mataderos.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    background-color: #61d3e3; 
+    font-size: 55px;    
+    font-family: Arial, sans-serif;
+    text-align: center;        
+    padding: 20px 0;           
+    width: 100vw;             
+    margin: 0;      
+}
+
+.menu-navegacion {
+    background-color: #f4f4f4; 
+    width: 100vw;
+    margin: 0;
+    padding: 15px 0;           
+    display: flex;             
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.grupo-izquierdo, .grupo-derecho {
+    display: flex;
+    gap: 25px;                
+}
+
+.grupo-izquierdo {
+    padding-left: 70px;      
+}
+
+.grupo-derecho {
+    padding-right: 140px;       
+}
+
+.menu-navegacion a {
+    text-decoration: none;     
+    color: #333333;            
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;         
+    transition: color 0.3s;    
+}
+
+.menu-navegacion a:hover {
+    color: #da1414;  
+}
+
+
+.calendario-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 100px;
+    padding: 30px;
+    background-color: #ffffff; 
+    border-radius: 100%; 
+    
+}
+
+.calendario-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 280px); 
+    gap: 40px; 
+    padding: 40px;
+    max-width: 1200px; 
+    margin: 40px auto; 
+    justify-content: center; 
+    
+    background-color:transparent
+
+}
+
+.mes {
+    background-color: #ffffff; 
+    padding: 15px;
+    border: 5px solid #000000;
+    box-sizing: border-box;
+}
+
+.mes h2 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+ol {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    padding: 0;
+    margin: 0;
+    gap: 8px 4px; 
+    
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ol{
+        font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.first_day_octubre{
+    grid-column-start: 4;
+}
+.first_day_noviembre{
+    grid-column-start: 7;
+}
+.first_day_diciembre{
+    grid-column-start: 2;
+}
+
+
+.dia_nombre {
+    font-weight: bold;
+}

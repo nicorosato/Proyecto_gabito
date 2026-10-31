@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('mataderos.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    background-color: #61d3e3; 
+    font-size: 55px;    
+    font-family: Arial, sans-serif;
+    text-align: center;        
+    padding: 20px 0;           
+    width: 100vw;             
+    margin: 0;               
+}
+
+.menu-navegacion {
+    background-color: #f4f4f4; 
+    width: 100vw;
+    margin: 0;
+    padding: 15px 0;           
+    display: flex;             
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.grupo-izquierdo, .grupo-derecho {
+    display: flex;
+    gap: 25px;                
+}
+
+.grupo-izquierdo {
+    padding-left: 70px;      
+}
+
+.grupo-derecho {
+    padding-right: 140px;       
+}
+
+.menu-navegacion a {
+    text-decoration: none;     
+    color: #333333;            
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;         
+    transition: color 0.3s;    
+}
+
+.menu-navegacion a:hover {
+    color: #da1414;  
+}
+
+.contenido-principal {
+    background-color: transparent; 
+    flex-grow: 1; 
+    padding: 60px 70px;
+    
+    /*el flex pone la caja y la foto/gif en la misma linea*/
+
+    display: flex;
+    flex-direction: row; /* fuerza a que se pongan uno al lado del otro */
+    align-items: center; /* los centra verticalmente entre sí */
+    justify-content: flex-start; /* los alinea empezando desde la izquierda */
+    gap: 40px; /* centra la caja verticalmente en el espacio disponible */
+}
+.gif-lateral {
+    width: 300px; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); 
+}
+h4{
+    color: #ffffff;
+    font-size: 36px; 
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px; 
+    line-height: 1.3;
+    font-weight: bold;
+
+}
+
+.caja-texto {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    border-radius: 67px;
+  
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+}
+
+#btn-cancion:hover {
+    background-color: #000;
+    transform: translateY(-5%);
+  
+}
+
+#btn-cancion:active {
+    transform: scale(0.98);
+}
+
+
+h2 {
+    color: #ffffff;
+    font-size: 36px; 
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px; 
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+h3{
+    color: #e4e4e4; 
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6; 
+    font-weight: normal;
+}
+.enlace-titulo {
+    color: rgb(0, 0, 0); 
+    text-decoration: none; /* elimina el subrayado */
+    display: inline-block; /* hace que los efectos visuales funcionen mejor */
+    cursor: pointer; /* hace que aparezca la manito al pasar el mouse */
+}
+.item-under {
+    margin-bottom: 30px;
+}
+
+
+.imagen-lateral {
+    width: 400px; 
+    height: auto;  
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); 
+    top: 100px;
+    position: sticky;
+    border-radius: 1000px;
+    align-self: flex-start; 
+}
+
+
+.subtitulo-bienvenida{
+    margin-top: 20px;
+}
+
+h10 {
+    color: #ffffff;
+    font-size: 36px; 
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px; 
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+h10 strong {
+    color: #ff0202;
+    font-size: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 20px; 
+   
+    font-weight: bold;
+}
+
+
+
+.boton-cancion{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: medium;
+    margin-bottom: 25px;
+    border-color: #dd8484 ;
+}
+
+.cocu{
+    width: 400px; 
+    height: auto;  
+    top: 50px;
+    position: sticky;
+    align-self: flex-start; 
+}

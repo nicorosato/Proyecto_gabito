@@ -1,0 +1,150 @@
+.enlace-titulo {
+    color: black; 
+    text-decoration: none; 
+    display: inline-block; 
+    cursor: pointer; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('mataderos.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    background-color: #61d3e3; 
+    font-size: 55px;    
+    font-family: Arial, sans-serif;
+    text-align: center;        
+    padding: 20px 0;           
+    width: 100vw;             
+    margin: 0;               
+}
+
+.menu-navegacion {
+    background-color: #f4f4f4; 
+    width: 100vw;
+    margin: 0;
+    padding: 15px 0;           
+    display: flex;             
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.grupo-izquierdo, .grupo-derecho {
+    display: flex;
+    gap: 25px;                
+}
+
+.grupo-izquierdo {
+    padding-left: 70px;      
+}
+
+.grupo-derecho {
+    padding-right: 140px;       
+}
+
+.menu-navegacion a {
+    text-decoration: none;     
+    color: #333333;            
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;         
+    transition: color 0.3s;    
+}
+
+.menu-navegacion a:hover {
+    color: #da1414;            
+}
+
+.linea-del-tiempo {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 0 4rem;
+    overflow-x: auto; 
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.linea-del-tiempo::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    background-color: #2d2d2d;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+
+.grupo {
+    position: relative;
+    flex-shrink: 0; 
+    width: 320px;
+    padding-top: 2.5rem; 
+    align-self: center;
+    transform: translateY(20px); 
+}
+
+.grupo::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #121212;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    left: 0;
+    top: -4px; 
+    z-index: 2;
+}
+
+.contenido {
+    width: 100%;
+}
+
+.bg {
+    background: transparent;
+}
+
+.bg h2 span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.bg .titulo {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+}
+
+.bg p {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.bg p:last-child {
+    margin-bottom: 0;
+}
