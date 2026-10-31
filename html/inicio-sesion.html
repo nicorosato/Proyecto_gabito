@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Underground en Argentina</title>
+    <link rel="stylesheet" href="inicio-seseion.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="telefono.css">
+</head>
+
+<body>
+    <audio id="sonido-clic" src="pluh.mp3"></audio>
+
+    <header>
+        <h1 class="titulo-pagina">
+         
+        
+        <nav class="menu-navegacion">
+            <div class="grupo-izquierdo">
+                <a href="que-es-under.html">¿Qué es el under?</a>
+                <a href="under-mainstream.html">Del Under al Mainstream</a>
+                <a href="calendario.html">Próximas Fechas</a>
+                <a href="recomendaciones.html">Recomendaciones</a>
+            </div>
+
+            <div class="grupo-derecho">
+                <a href="inicio-sesion.html" id="btn-login">Iniciar Sesión</a>
+                <a href="#" id="btn-logout" style="display: none;">Cerrar Sesión</a>
+                <a href="MP.html">Colaboraciones</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        
+        <div class="contenedor-formulario">
+            <div class="tarjeta-blanca">
+                <h2>Iniciar Sesión</h2>
+                
+                <form id="form">
+                    <div class="grupo-campo">
+                        <label for="nombre">Nombre joseadito:</label>
+                        <input type="text" id="nombre" required />
+                    </div>
+                    
+                    <div class="grupo-campo">
+                        <label for="contra">Contraseña:</label>
+                        <input type="password" id="contra" required />
+                    </div>
+
+                    <button type="button" id="siguiente" class="btn-siguiente">Siguiente</button>
+                    <div class="contenedor-registro">
+                        <a href="crear-cuenta.html"> Registrarse</a>
+                    </div>
+                   
+                </form>
+                
+                <p id="log"></p>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <script src="login.js" defer></script>
+    <script src="auth.js"></script> 
+
+
+
+</body>
+
+</html>

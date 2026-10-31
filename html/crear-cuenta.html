@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta - El Underground en Argentina</title>
+    <link rel="stylesheet" href="crear_cuenta.css">
+    
+    <link rel="stylesheet" href="telefono.css">
+</head>
+<body>
+    <audio id="sonido-clic" src="pluh.mp3"></audio>
+
+    <header>
+        <h1 class="titulo-pagina">
+            <a href="pestaña-principal.html" class="enlace-titulo">EL UNDERGROUND EN ARGENTINA</a>
+        </h1>
+        
+        <nav class="menu-navegacion">
+           <div class="grupo-izquierdo">
+                <a href="que-es-under.html">¿Qué es el under?</a>
+                <a href="under-mainstream.html">Del Under al Mainstream</a>
+                <a href="calendario.html">Próximas Fechas</a>
+                <a href="recomendaciones.html">Recomendaciones</a>
+            </div>
+
+            <div class="grupo-derecho">
+                <a href="inicio-sesion.html" id="btn-login">Iniciar Sesión</a>
+                <a href="#" id="btn-logout" style="display: none;">Cerrar Sesión</a>
+                <a href="MP.html">Colaboraciones</a>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="volver-sesion"> 
+        <a href="inicio-sesion.html" class="btn-vovler">Iniciar sesión</a>
+    </nav>
+
+    <main class="contenido-principal">
+        <form id="RegistroUsuario">
+            <h2 class="crearCuenta">Crear Cuenta</h2>
+            
+            <label for="nombre">Nombre del joseador:</label>
+            <input type="text" id="nombre" required>
+          
+            <label for="contraseña">Contraseña del joseador:</label>
+            <input type="password" id="contraa" required>
+
+            <button type="button" id="ccrear">Siguiente</button>
+
+            <p id="error-login" class="mensaje-error"></p>   
+        </form>
+    </main>
+
+    <script src="login.js" defer></script>
+    <script src="auth.js"></script> 
+</body>
+</html>
